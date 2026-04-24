@@ -20,11 +20,11 @@ The system models:
 
 
 
-\- \*\*Users → Nodes\*\*
+\* \*\*Users → Nodes\*\*
 
-\- \*\*Behavioral similarity → Edges\*\*
+\* \*\*Behavioral similarity → Edges\*\*
 
-\- \*\*GNN → Bot / Human prediction\*\*
+\* \*\*GNN → Bot / Human prediction\*\*
 
 
 
@@ -40,19 +40,19 @@ The project includes an interactive \*\*Streamlit dashboard\*\* for visualizatio
 
 
 
-\- Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
+\* Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
 
-\- Graph Neural Network (\*\*GCN\*\*) classification
+\* Graph Neural Network (\*\*GCN\*\*) classification
 
-\- Interactive network graph visualization
+\* Interactive network graph visualization
 
-\- Real-time bot prediction interface
+\* Real-time bot prediction interface
 
-\- Network analytics and graph metrics dashboard
+\* Network analytics and graph metrics dashboard
 
-\- Multi-page Streamlit application
+\* Multi-page Streamlit application
 
-\- Deployable machine learning system
+\* Deployable machine learning system
 
 
 
@@ -69,6 +69,8 @@ Try the deployed application:
 
 
 👉 \*\*https://bot-detection-using-gnn.streamlit.app/\*\*
+
+
 
 \---
 
@@ -289,14 +291,6 @@ This ensures:
 
 
 The graph was constructed using a \*\*K-Nearest Neighbors (KNN)\*\* algorithm.
-
-
-
-Process:
-
-
-
-Each user node is connected to its nearest neighbors based on similarity.
 
 
 
@@ -574,42 +568,6 @@ Confidence Score
 
 
 
-\### Network Insights Dashboard
-
-
-
-Provides real graph analytics:
-
-
-
-\* Total Users
-
-\* Total Connections
-
-\* Average Degree
-
-\* Maximum Degree
-
-\* Minimum Degree
-
-\* Network Density
-
-\* Connected Components
-
-\* Clustering Coefficient
-
-\* Bot Percentage
-
-
-
-These metrics help analyze network structure and behavior.
-
-
-
-\---
-
-
-
 \## 📂 Project Structure
 
 
@@ -618,13 +576,13 @@ These metrics help analyze network structure and behavior.
 
 Bot\_Detection\_GNN/
 
-│
+
 
 ├── app.py
 
 ├── requirements.txt
 
-│
+
 
 ├── model/
 
@@ -636,7 +594,7 @@ Bot\_Detection\_GNN/
 
 │     └── bot\_detection\_results.csv
 
-│
+
 
 ├── Notebook/
 
@@ -656,7 +614,7 @@ Bot\_Detection\_GNN/
 
 
 
-\### Clone Repository
+Clone repository:
 
 
 
@@ -670,7 +628,7 @@ cd Bot\_Detection\_GNN
 
 
 
-\### Create Virtual Environment
+Create virtual environment:
 
 
 
@@ -682,7 +640,7 @@ python -m venv venv
 
 
 
-\### Activate Environment
+Activate:
 
 
 
@@ -710,7 +668,7 @@ source venv/bin/activate
 
 
 
-\### Install Dependencies
+Install dependencies:
 
 
 
@@ -722,7 +680,7 @@ pip install -r requirements.txt
 
 
 
-\### Run Application
+Run application:
 
 
 
@@ -731,44 +689,6 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ```
-
-
-
-\---
-
-
-
-\## 📊 Example Network Metrics
-
-
-
-The system computes:
-
-
-
-\* Degree Distribution
-
-\* Network Density
-
-\* Clustering Coefficient
-
-\* Connected Components
-
-\* Bot Ratio
-
-
-
-These metrics provide insights into:
-
-
-
-\* Network connectivity
-
-\* User clustering
-
-\* Behavioral similarity
-
-\* Bot concentration
 
 
 
@@ -846,17 +766,15 @@ This project demonstrates practical applications of:
 
 
 
-It is suitable for:
+Suitable for:
 
 
 
-\* Minor / Major academic projects
+\* Academic projects
 
 \* Technical presentations
 
-\* Portfolio projects
-
-\* Research demonstrations
+\* Portfolio demonstrations
 
 
 
@@ -893,6 +811,4 @@ https://github.com/Varundube99
 This project is intended for academic and educational use.
 
 
-
-\---
 
