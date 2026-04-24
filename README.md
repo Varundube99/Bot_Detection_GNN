@@ -20,11 +20,11 @@ The system models:
 
 
 
-\* Users → Nodes
+\- \*\*Users → Nodes\*\*
 
-\* Behavioral similarity → Edges
+\- \*\*Behavioral similarity → Edges\*\*
 
-\* GNN → Bot / Human prediction
+\- \*\*GNN → Bot / Human prediction\*\*
 
 
 
@@ -40,19 +40,19 @@ The project includes an interactive \*\*Streamlit dashboard\*\* for visualizatio
 
 
 
-\* Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
+\- Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
 
-\* Graph Neural Network (\*\*GCN\*\*) classification
+\- Graph Neural Network (\*\*GCN\*\*) classification
 
-\* Interactive network graph visualization
+\- Interactive network graph visualization
 
-\* Real-time bot prediction interface
+\- Real-time bot prediction interface
 
-\* Network analytics and graph metrics dashboard
+\- Network analytics and graph metrics dashboard
 
-\* Multi-page Streamlit application
+\- Multi-page Streamlit application
 
-\* Deployable machine learning system
+\- Deployable machine learning system
 
 
 
@@ -69,8 +69,6 @@ Try the deployed application:
 
 
 👉 \*\*https://bot-detection-using-gnn.streamlit.app/\*\*
-
-
 
 \---
 
