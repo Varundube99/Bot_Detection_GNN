@@ -2,33 +2,21 @@
 
 
 
-!\[Python](https://img.shields.io/badge/Python-3.10-blue)
-
-!\[Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
-
-!\[GNN](https://img.shields.io/badge/Model-Graph%20Neural%20Network-green)
-
-!\[Status](https://img.shields.io/badge/Status-Deployed-success)
+A complete \*\*Graph Neural Network (GNN) application\*\* for detecting automated bot accounts in a simulated social network using \*\*Graph Theory\*\* and \*\*Deep Learning\*\*.
 
 
 
-A complete \*\*Graph Neural Network (GNN) application\*\* for detecting automated bot accounts in a simulated social network using \*\*Graph Theory\*\* and \*\*Graph Neural Networks\*\*.
+The system models users as nodes and their behavioral similarity as edges, then applies a neural network to classify accounts as:
 
 
 
-The system models:
+\* \*\*Bot\*\*
+
+\* \*\*Human\*\*
 
 
 
-\* \*\*Users → Nodes\*\*
-
-\* \*\*Behavioral similarity → Edges\*\*
-
-\* \*\*GNN → Bot / Human prediction\*\*
-
-
-
-The project includes an interactive \*\*Streamlit dashboard\*\* for visualization, prediction, and network analysis.
+The project includes an interactive \*\*Streamlit dashboard\*\* for visualization, prediction, and network analytics.
 
 
 
@@ -36,61 +24,39 @@ The project includes an interactive \*\*Streamlit dashboard\*\* for visualizatio
 
 
 
-\## 🚀 Key Features
+\## 📋 Table of Contents
 
 
 
-\* Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
+\* Overview
 
-\* Graph Neural Network (\*\*GCN\*\*) classification
+\* Key Features
 
-\* Interactive network graph visualization
+\* Quick Start
 
-\* Real-time bot prediction interface
+\* How It Works
 
-\* Network analytics and graph metrics dashboard
+\* Graph Construction Methodology
 
-\* Multi-page Streamlit application
+\* Model Architecture
 
-\* Deployable machine learning system
+\* Application Pages
 
+\* Project Structure
 
+\* Technologies Used
 
-\---
+\* Deployment
 
+\* Limitations
 
+\* Future Work
 
-\## 🌐 Live Demo
+\* Troubleshooting
 
+\* Author
 
-
-Try the deployed application:
-
-
-
-👉 \*\*https://bot-detection-using-gnn.streamlit.app/\*\*
-
-
-
-\---
-
-
-
-\## 📌 Project Overview
-
-
-
-Social media platforms contain both legitimate users and automated bots. Bots can spread misinformation, manipulate engagement metrics, and disrupt online ecosystems.
-
-
-
-Traditional machine learning models analyze users independently. However, real-world behavior is influenced by relationships between users. This project addresses that limitation by modeling the system as a \*\*graph\*\* and applying a \*\*Graph Neural Network (GNN)\*\* to learn patterns from both:
-
-
-
-\* User behavior
-
-\* User relationships
+\* License
 
 
 
@@ -98,77 +64,37 @@ Traditional machine learning models analyze users independently. However, real-w
 
 
 
-\## 🎯 Problem Statement
+\# 📖 Overview
 
 
 
-Detect suspicious bot accounts in a social network by:
+Social media platforms contain both genuine users and automated bot accounts. Bots can:
 
 
 
-\* Modeling users as nodes
+\* Spread misinformation
 
-\* Creating connections based on behavioral similarity
+\* Manipulate engagement metrics
 
-\* Using Graph Neural Networks for classification
+\* Generate spam content
 
-\* Visualizing network structure and analytics
-
-
-
-\---
+\* Disrupt online ecosystems
 
 
 
-\## 🧠 Core Concepts Used
+Traditional machine learning models analyze users independently. However, real-world behavior is influenced by relationships between users.
 
 
 
-\### Graph Theory
+This project addresses that limitation by:
 
 
 
-\* Nodes (Users)
+\* Modeling the system as a \*\*graph\*\*
 
-\* Edges (User similarity / interaction)
+\* Using a \*\*Graph Neural Network (GNN)\*\*
 
-\* Degree
-
-\* Network Density
-
-\* Connected Components
-
-\* Clustering Coefficient
-
-\* Graph Construction using KNN
-
-
-
-\### Machine Learning / Deep Learning
-
-
-
-\* Graph Neural Networks (GCN)
-
-\* Node Classification
-
-\* Feature Engineering
-
-\* Feature Scaling
-
-\* Message Passing
-
-
-
-\### Data Visualization
-
-
-
-\* Network Graph Visualization
-
-\* Real-time Prediction Interface
-
-\* Network Metrics Dashboard
+\* Learning patterns from both behavior and relationships
 
 
 
@@ -176,21 +102,187 @@ Detect suspicious bot accounts in a social network by:
 
 
 
-\## 🏗️ System Architecture
+\# ✨ Key Features
 
 
+
+🔗 Graph-based user relationship modeling using \*\*K-Nearest Neighbors (KNN)\*\*
+
+🧠 Graph Neural Network (\*\*GCN\*\*) for bot classification
+
+📊 Interactive network visualization
+
+🔍 Real-time bot prediction interface
+
+📈 Network analytics and graph metrics
+
+🖥️ Multi-page Streamlit dashboard
+
+⚡ Fast inference using PyTorch
+
+🌐 Deployable machine learning application
+
+
+
+\---
+
+
+
+\# 🚀 Quick Start
+
+
+
+\## Prerequisites
+
+
+
+\* Python 3.8 or higher
+
+\* pip package manager
+
+\* Git
+
+
+
+\---
+
+
+
+\## Installation
+
+
+
+Clone the repository:
+
+
+
+```bash
+
+git clone https://github.com/YOUR\_USERNAME/Bot\_Detection\_GNN.git
+
+cd Bot\_Detection\_GNN
+
+```
+
+
+
+Create virtual environment:
+
+
+
+```bash
+
+python -m venv venv
+
+```
+
+
+
+Activate environment:
+
+
+
+Windows:
+
+
+
+```bash
+
+venv\\Scripts\\activate
+
+```
+
+
+
+Mac / Linux:
+
+
+
+```bash
+
+source venv/bin/activate
+
+```
+
+
+
+Install dependencies:
+
+
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+
+
+Run the application:
+
+
+
+```bash
+
+streamlit run app.py
+
+```
+
+
+
+Open browser:
+
+
+
+```text
+
+http://localhost:8501
+
+```
+
+
+
+\---
+
+
+
+\# 🧠 How It Works
+
+
+
+The system follows a graph-based machine learning workflow.
+
+
+
+```text
 
 User Data
 
-→ Feature Engineering
+&#x20;    ↓
 
-→ Graph Construction
+Feature Engineering
 
-→ Graph Neural Network
+&#x20;    ↓
 
-→ Prediction
+Graph Construction
 
-→ Visualization
+&#x20;    ↓
+
+Graph Neural Network
+
+&#x20;    ↓
+
+Prediction
+
+&#x20;    ↓
+
+Visualization
+
+```
+
+
+
+The model learns not only from user behavior but also from relationships between users.
 
 
 
@@ -198,15 +290,11 @@ User Data
 
 
 
-\## 🧩 Graph Construction Methodology
+\# 🧩 Graph Construction Methodology
 
 
 
-A key part of this project is how the \*\*social network graph\*\* was generated from structured user data.
-
-
-
-Instead of using an existing network, the graph was programmatically constructed to simulate realistic relationships between users using Graph Theory principles.
+Instead of using an existing social network, the graph was generated programmatically using \*\*Graph Theory\*\*.
 
 
 
@@ -214,15 +302,15 @@ Instead of using an existing network, the graph was programmatically constructed
 
 
 
-\### Step 1 — Node Representation
+\## Step 1 — Node Representation
 
 
 
-Each row in the dataset represents a \*\*user node\*\*.
+Each row in the dataset represents a user node.
 
 
 
-Every user is described using behavioral features:
+Each user contains behavioral features:
 
 
 
@@ -244,11 +332,15 @@ Every user is described using behavioral features:
 
 
 
-These features form the:
+These values form the:
 
 
 
-\*\*Node Feature Vector\*\*
+```text
+
+Node Feature Vector
+
+```
 
 
 
@@ -256,7 +348,7 @@ These features form the:
 
 
 
-\### Step 2 — Feature Scaling
+\## Step 2 — Feature Scaling
 
 
 
@@ -264,7 +356,11 @@ All numerical features were standardized using:
 
 
 
-\*\*StandardScaler (Scikit-learn)\*\*
+```text
+
+StandardScaler (Scikit-learn)
+
+```
 
 
 
@@ -274,11 +370,9 @@ This ensures:
 
 \* Equal feature importance
 
-\* Stable model training
+\* Stable training
 
 \* Faster convergence
-
-\* Reduced numerical instability
 
 
 
@@ -286,19 +380,31 @@ This ensures:
 
 
 
-\### Step 3 — Graph Creation using K-Nearest Neighbors (KNN)
+\## Step 3 — Graph Creation using KNN
 
 
 
-The graph was constructed using a \*\*K-Nearest Neighbors (KNN)\*\* algorithm.
+The graph was constructed using:
 
 
 
-Similarity was calculated using:
+```text
+
+K-Nearest Neighbors (KNN)
+
+```
 
 
 
-\*\*Euclidean Distance\*\*
+Similarity metric:
+
+
+
+```text
+
+Euclidean Distance
+
+```
 
 
 
@@ -306,7 +412,11 @@ Parameter used:
 
 
 
-\*\*k = 50\*\*
+```text
+
+k = 50
+
+```
 
 
 
@@ -314,7 +424,7 @@ Meaning:
 
 
 
-Each user is connected to their \*\*50 most similar users\*\*, forming a realistic social network structure.
+Each user connects to their \*\*50 most similar users\*\*.
 
 
 
@@ -322,11 +432,19 @@ Each user is connected to their \*\*50 most similar users\*\*, forming a realist
 
 
 
-\### Step 4 — Edge Generation
+\## Step 4 — Edge Generation
 
 
 
-Connections between users were stored as an \*\*edge list\*\*.
+Connections between users were stored as:
+
+
+
+```text
+
+edges.csv
+
+```
 
 
 
@@ -334,7 +452,7 @@ Format:
 
 
 
-```
+```text
 
 source\_node, target\_node
 
@@ -346,7 +464,7 @@ Example:
 
 
 
-```
+```text
 
 12, 45
 
@@ -358,19 +476,39 @@ Example:
 
 
 
-Edges were saved into:
+\---
 
 
+
+\## Step 5 — Graph Conversion for GNN
+
+
+
+The graph was converted into a PyTorch Geometric format.
+
+
+
+```text
+
+x            → Node features
+
+edge\_index   → Graph connections
+
+y            → Labels
 
 ```
 
-edges.csv
+
+
+This enables:
+
+
+
+```text
+
+Message Passing between nodes
 
 ```
-
-
-
-This file represents the complete graph structure.
 
 
 
@@ -378,59 +516,7 @@ This file represents the complete graph structure.
 
 
 
-\### Step 5 — Graph Conversion for GNN
-
-
-
-The graph was converted into a format compatible with:
-
-
-
-\*\*PyTorch Geometric\*\*
-
-
-
-Required components:
-
-
-
-```
-
-x            → Node feature matrix
-
-edge\_index   → Graph connectivity
-
-y            → Node labels
-
-```
-
-
-
-This structure enables:
-
-
-
-\*\*Message Passing between nodes\*\*
-
-
-
-Which allows the model to learn:
-
-
-
-\* Local relationships
-
-\* Network patterns
-
-\* Coordinated behavior
-
-
-
-\---
-
-
-
-\## 🤖 Model Architecture
+\# 🤖 Model Architecture
 
 
 
@@ -438,7 +524,11 @@ Model Type:
 
 
 
-\*\*Graph Convolutional Network (GCN)\*\*
+```text
+
+Graph Convolutional Network (GCN)
+
+```
 
 
 
@@ -446,7 +536,7 @@ Architecture:
 
 
 
-```
+```text
 
 Input Features
 
@@ -478,7 +568,7 @@ Output:
 
 
 
-```
+```text
 
 0 → Human
 
@@ -492,11 +582,11 @@ Output:
 
 
 
-\## 🚀 Application Features
+\# 🖥️ Application Pages
 
 
 
-\### Network Graph Visualization
+\## 📊 Network Graph
 
 
 
@@ -504,17 +594,17 @@ Displays:
 
 
 
-\* Social network structure
-
 \* User relationships
+
+\* Node connections
+
+\* Network structure
 
 \* Bot / Human classification
 
-\* Node connectivity patterns
 
 
-
-Bots are highlighted using color coding.
+Helps visualize how users interact in the network.
 
 
 
@@ -522,15 +612,15 @@ Bots are highlighted using color coding.
 
 
 
-\### Check a User (Prediction Interface)
+\## 🔍 Check a User
 
 
 
-Users can manually input account features to detect whether the account is a bot.
+Users can manually input account behavior.
 
 
 
-Input Fields:
+Input:
 
 
 
@@ -554,11 +644,9 @@ Output:
 
 
 
-```
+```text
 
 Prediction: BOT / HUMAN
-
-Confidence Score
 
 ```
 
@@ -568,21 +656,57 @@ Confidence Score
 
 
 
-\## 📂 Project Structure
+\## 📈 Network Insights
 
 
 
-```
+Displays real-time graph analytics.
+
+
+
+Metrics:
+
+
+
+\* Total Users
+
+\* Total Connections
+
+\* Average Degree
+
+\* Maximum Degree
+
+\* Minimum Degree
+
+\* Network Density
+
+\* Connected Components
+
+\* Clustering Coefficient
+
+\* Bot Percentage
+
+
+
+\---
+
+
+
+\# 📁 Project Structure
+
+
+
+```text
 
 Bot\_Detection\_GNN/
 
-
+│
 
 ├── app.py
 
 ├── requirements.txt
 
-
+│
 
 ├── model/
 
@@ -594,7 +718,7 @@ Bot\_Detection\_GNN/
 
 │     └── bot\_detection\_results.csv
 
-
+│
 
 ├── Notebook/
 
@@ -610,93 +734,7 @@ Bot\_Detection\_GNN/
 
 
 
-\## ⚙️ Installation (Run Locally)
-
-
-
-Clone repository:
-
-
-
-```
-
-git clone https://github.com/YOUR\_USERNAME/Bot\_Detection\_GNN.git
-
-cd Bot\_Detection\_GNN
-
-```
-
-
-
-Create virtual environment:
-
-
-
-```
-
-python -m venv venv
-
-```
-
-
-
-Activate:
-
-
-
-Windows:
-
-
-
-```
-
-venv\\Scripts\\activate
-
-```
-
-
-
-Mac / Linux:
-
-
-
-```
-
-source venv/bin/activate
-
-```
-
-
-
-Install dependencies:
-
-
-
-```
-
-pip install -r requirements.txt
-
-```
-
-
-
-Run application:
-
-
-
-```
-
-streamlit run app.py
-
-```
-
-
-
-\---
-
-
-
-\## 🧪 Technologies Used
+\# 🧪 Technologies Used
 
 
 
@@ -724,57 +762,43 @@ streamlit run app.py
 
 
 
-\## 🎯 Applications
+\# 🌐 Deployment
 
 
 
-\* Social media bot detection
-
-\* Fraud detection
-
-\* Cybersecurity monitoring
-
-\* Network anomaly detection
-
-\* Behavioral analytics
-
-\* Graph-based classification
+The application can be deployed using:
 
 
 
-\---
+\* Streamlit Cloud
+
+\* GitHub
+
+\* Localhost
 
 
 
-\## 📚 Academic Relevance
+To deploy:
 
 
 
-This project demonstrates practical applications of:
+```bash
+
+streamlit run app.py
+
+```
 
 
 
-\* Graph Theory
-
-\* Machine Learning
-
-\* Graph Neural Networks
-
-\* Network Analysis
-
-\* Data Visualization
+Live deployment example:
 
 
 
-Suitable for:
+```text
 
+https://bot-detection-using-gnn.streamlit.app/
 
-
-\* Academic projects
-
-\* Technical presentations
-
-\* Portfolio demonstrations
+```
 
 
 
@@ -782,7 +806,117 @@ Suitable for:
 
 
 
-\## 👨‍💻 Author
+\# ⚠️ Limitations
+
+
+
+\* Synthetic dataset used for demonstration
+
+\* Graph connections based on similarity rather than real social network data
+
+\* Performance depends on feature quality
+
+\* Large graphs require higher memory and computation
+
+\* Model trained on structured data only
+
+
+
+\---
+
+
+
+\# 🚀 Future Work
+
+
+
+\* Real-time social network integration
+
+\* Community detection visualization
+
+\* Graph filtering and search functionality
+
+\* API-based prediction system
+
+\* Larger dataset training
+
+\* Real-time streaming analytics
+
+
+
+\---
+
+
+
+\# 🔧 Troubleshooting
+
+
+
+Issue: Streamlit app not starting
+
+
+
+Solution:
+
+
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+
+
+\---
+
+
+
+Issue: Model not loading
+
+
+
+Solution:
+
+
+
+```bash
+
+Check model file path
+
+Ensure dependencies are installed
+
+```
+
+
+
+\---
+
+
+
+Issue: Graph visualization slow
+
+
+
+Solution:
+
+
+
+```text
+
+Reduce number of nodes
+
+Use subset visualization
+
+```
+
+
+
+\---
+
+
+
+\# 👨‍💻 Author
 
 
 
@@ -790,7 +924,7 @@ Suitable for:
 
 
 
-Machine Learning | Graph Neural Networks | AI Applications
+AI / Machine Learning Enthusiast
 
 
 
@@ -804,11 +938,17 @@ https://github.com/Varundube99
 
 
 
-\## 📄 License
+\# 📄 License
 
 
 
 This project is intended for academic and educational use.
+
+
+
+Application code is open-source.
+
+Model files are included for demonstration purposes.
 
 
 
